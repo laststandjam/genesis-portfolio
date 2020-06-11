@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react"
 
-const Designs = ()=>{
+const DesignsShow = ()=>{
     return(<div>
-        <h1>Designs hit</h1>
+        <h1>Show hit</h1>
     </div>)
 }
 
-export default Designs
+export default DesignsShow
