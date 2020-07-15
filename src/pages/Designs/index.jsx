@@ -2,9 +2,18 @@ import React, {useState, useEffect} from "react"
 import Images from "../../components/Images"
 
 import Book from 'react-page-flip'
+
+
+let images = Images
 const Designs = ()=>{
- 
-    return(<div id="mybook">  { Images.map(({id, src, title, description}) => <img key={id} src={src} title={title} alt={description} />)}
+  let denim = images.filter(function(images) {
+    return images.group == "genderless_denim"
+  
+  })
+  ;
+  console.log(images)
+  console.log(denim)
+    return(<div id="mybook">  { denim.map(({id, src, title, description}) => <img key={id} src={src} title={title} alt={description} width="500" length="500" />)}
 
      <Book>
      <Book.Page>
